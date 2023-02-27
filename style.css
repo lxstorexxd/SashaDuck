@@ -5,21 +5,20 @@ body {
     background-image: linear-gradient(to right, #42aaff, #273a8c);
     font-family: 'Press Start 2P';
     margin: 0;
+    width: 100%;
     height: 100vh;
 }
 
 #game-container {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
 
 canvas {
     display: block;
-    width: 80%;
-    height: 90%;
     background-image: url("image/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,6 +42,7 @@ canvas {
     transform: translate(-50%, 50%);
     text-align: center;
     border-radius: 10px;
+    user-select: none;
     background-color: #fdfff5;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 10;
@@ -56,6 +56,7 @@ canvas {
     color: #fff;
     font-size: 2em;
     text-align: center;
+    user-select: none;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 11;
 }

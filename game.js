@@ -1,7 +1,3 @@
-document.getElementById("game-canvas").width = window.screen.width*0.8;
-document.getElementById("game-canvas").height = window.screen.height*0.9;
-
-
 const canvas = document.getElementById('game-canvas');
 const ctx = canvas.getContext("2d");
 
@@ -14,14 +10,14 @@ const FLAPPY_SPEED = -4;
 const BIRD_WIDTH = 50;
 const BIRD_HEIGHT = 50;
 const PIPE_WIDTH = 50;
-const PIPE_GAP = 150;
+const PIPE_GAP = 140;
 
 let BIRD_X = 50;
 let BIRD_Y = 50;
 let BIRD_VELOCITY = 0;
 let BIRD_ACCELERATION = 0.1;
 
-let PIPE_X = 400;
+let PIPE_X = 600;
 let PIPE_Y = canvas.height - 200;
 
 let scoreDiv = document.getElementById('score-out');
@@ -123,7 +119,7 @@ function ResetGame() {
     BIRD_VELOCITY = 0;
     BIRD_ACCELERATION - 0.1;
 
-    PIPE_X = 400;
+    PIPE_X = 600;
     PIPE_Y = canvas.height - 200;
 
     score = 0;
@@ -154,7 +150,7 @@ function loop() {
 
     PIPE_X -= 1.5;
     if (PIPE_X < -50) {
-        PIPE_X = window.screen.width*0.8;
+        PIPE_X = 600;
         PIPE_Y = Math.random() * (canvas.height - PIPE_GAP) + PIPE_WIDTH;
     }
 
