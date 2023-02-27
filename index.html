@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flappy</title>
+</head>
+<body>
+    <div id="menu">
+        <h1>Game Over</h1>
+        <p>Score: <span id="end-score"></span></p>
+        <p>Best Score: <span id="high-score"></span></p>
+        <button id="restart">Restart</button>
+    </div>
+    <div id="game-container">
+        <div id="score-out">0</div>
+        <canvas id="game-canvas" width="400" height="600"></canvas>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
